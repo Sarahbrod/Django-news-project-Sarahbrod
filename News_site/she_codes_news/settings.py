@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+import sys
+sys.path
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -39,7 +41,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 INSTALLED_APPS = [
     # 'news.apps.NewsConfig',
-    'projects.apps.ProjectsConfig',
+    'news.apps.NewsConfig',
     'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -48,7 +50,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
-    'projects',
 ]
 
 AUTH_USER_MODEL = 'users.CustomUser'
